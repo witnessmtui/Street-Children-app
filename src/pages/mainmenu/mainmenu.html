@@ -1,0 +1,37 @@
+
+<ion-header>
+
+  <ion-navbar>
+
+ <ion-buttons start>
+ 	<button ion-button icon-only menuToggle><ion-icon name="menu"></ion-icon>	
+ 	</button>
+ </ion-buttons>
+
+    <ion-title>mainmenu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+	<button ion-item>Fill forms</button>
+
+
+	  <button ion-button clear  (click)="onGoToIR()">Initial Referral</button>
+	  <hr>
+	  <button ion-button clear (click)="onGoToII()">Initial Investigation</button>
+
+
+<button ion-item>View forms</button>  
+<button ion-button clear  (click)="onGoToReceived()">Received Forms</button>
+	  <hr>
+<button ion-button clear (click)="onGoToForms()">My Forms</button>
+
+
+<button ion-button block>Enrol Case</button><hr>
+<button ion-button block icon-left><ion-icon name="notifications" ></ion-icon>Notifications</button>
+
+</ion-list>
+</ion-content>
