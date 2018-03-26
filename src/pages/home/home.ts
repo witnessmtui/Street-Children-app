@@ -1,19 +1,23 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { IrviewPage } from '../irview/irview';
-import { IiviewPage } from '../iiview/iiview';
+import { RegistrationPage } from "../registration/registration";
+import { MainmenuPage } from "../mainmenu/mainmenu";
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-irPage = IrviewPage;
-iiPage = IiviewPage;
-constructor (private navCtrl: NavController){}
-  onGoToIR(){
-  this.navCtrl.push(this.irPage);
+
+  constructor(public navCtrl: NavController) {
+
   }
-  onGoToII(){
-  this.navCtrl.push(this.iiPage);
-  }
+
+onGoToRegistration() {
+	this.navCtrl.push(RegistrationPage);
+}
+onGoToMainmenu() {
+	this.navCtrl.push(MainmenuPage);
+}
+
 }

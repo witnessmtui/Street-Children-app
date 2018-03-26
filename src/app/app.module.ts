@@ -3,20 +3,27 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { IrviewPage } from '../pages/irview/irview';
-import { IiviewPage } from '../pages/iiview/iiview';
-import { EnrolPage } from '../pages/enrol/enrol';
+import { RegistrationPage } from "../pages/registration/registration";
+import { MainmenuPage } from "../pages/mainmenu/mainmenu";
+
+import { IrformPage } from "../pages/irform/irform";
+import { IiformPage } from "../pages/iiform/iiform";
+import { ReceivedformsPage } from "../pages/receivedforms/receivedforms";
+
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    IrviewPage,
-    IiviewPage,
-    EnrolPage
-
+    RegistrationPage,
+    MainmenuPage,
+    IrformPage,
+    IiformPage,
+    ReceivedformsPage
   ],
   imports: [
     BrowserModule,
@@ -26,9 +33,11 @@ import { EnrolPage } from '../pages/enrol/enrol';
   entryComponents: [
     MyApp,
     HomePage,
-    IrviewPage,
-    IiviewPage,
-    EnrolPage
+    RegistrationPage,
+    MainmenuPage,
+    IrformPage,
+    IiformPage,
+    ReceivedformsPage
   ],
   providers: [
     StatusBar,

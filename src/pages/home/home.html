@@ -1,23 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      SWO Flow
+     Children Case Registration App
     </ion-title>
   </ion-navbar>
 </ion-header>
+
 <ion-content padding>
-  <ion-list>
-  <button ion-item ="list of IR forms" (click)="onGoToIR()">
-  IR View
-  </button>
-  </ion-list>
-  <!-- <button ion-button (click)="onGoToIR()">IR View</button> -->
-  <hr>
-  <ion-list>
-  <button ion-item ="list of II forms" (click)="onGoToII()">
-  II View
-  </button>
-  </ion-list>
-  <hr>
-  <!-- <button ion-button (click)="onGoToII()">II View</button> -->
+	<form padding>
+ 	<ion-item>
+  <ion-label color="primary" stacked>Username</ion-label>
+  <ion-input placeholder="username"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label color="primary" stacked>Password</ion-label>
+    <ion-input type="password" placeholder="Password"></ion-input>
+  </ion-item>
+  <ion-row center>  
+ <ion-col text-center>   
+  <button ion-button (click)="onGoToMainmenu()">login</button>  
+ </ion-col> 
+</ion-row>
+ <ion-row center>  
+ <ion-col text-center>   
+  <button ion-button clear (click)="onGoToRegistration()">Please Register</button>  
+ </ion-col> 
+</ion-row>
+</form>
 </ion-content>
